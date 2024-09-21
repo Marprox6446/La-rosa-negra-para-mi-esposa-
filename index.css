@@ -1,0 +1,62 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url('fondo.jpg') no-repeat center center fixed; /* Cambia 'tu-fondo.jpg' por el nombre de tu imagen */
+    background-size: cover; /* Asegúrate de que cubra toda la pantalla */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%; /* Reduce el ancho */
+    max-width: 600px; /* Ajusta el tamaño máximo */
+    padding: 15px; /* Reduce el padding */
+    background: rgba(34, 34, 34, 0.8);
+    border: 3px solid #b30000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px red;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    margin: auto; /* Centra el contenedor */
+}
+
+h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    margin-bottom: 15px;
+    color: #ff3333;
+    text-shadow: 0px 0px 10px red;
+}
+
+p {
+    font-size: 1rem; /* Reduce el tamaño de fuente de los párrafos */
+    line-height: 1.4; /* Ajusta el interlineado */
+    margin: 10px 0;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+img.gif {
+    width: 60%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #b30000;
+}
+
+.animated-message {
+    font-size: 1.2rem; /* Ajusta el tamaño del mensaje animado */
+    margin-top: 15px; /* Reduce el margen superior */
+    color: #ffcc00; /* Color amarillo para destacar */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
